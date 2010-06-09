@@ -55,3 +55,15 @@ h1 {
 img {
     margin: 10px;
 }
+
+.notifyme {
+    margin: auto;
+    margin-top: 10px;
+    width: 180px;
+    height: 80px;
+    background: url('lic-notify.png');
+}
+
+.notifyme:hover {
+    background: url('lic-notify-hover.png');
+}
