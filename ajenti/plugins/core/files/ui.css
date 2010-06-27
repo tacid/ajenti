@@ -383,7 +383,7 @@ a {
 }
 
 .ui-el-layouttable-cell {
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 /* ModalBox */
