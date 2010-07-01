@@ -147,6 +147,15 @@ class LocalFS:
         else:
             self.path = os.path.join(self.path, path)
 
+    def get_content(self, filename):
+        path = os.path.join(self.path, filename)
+        try:
+            f = open(path)
+            return "".join(f.readlines())
+        except:
+            return None
+            
+
     def up(self):
         self.path = os.path.abspath(os.path.join(self.path, '..'))
 

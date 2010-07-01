@@ -3,6 +3,10 @@ from ajenti.com import implements
 from ajenti.app.api import ICategoryProvider
 from ajenti.app.helpers import *
 
+from pygments import highlight
+from pygments.lexers import get_lexer_for_filename, TextLexer
+from pygments.formatters import HtmlFormatter
+
 from api import *
 
 
@@ -19,16 +23,42 @@ class FileManagerPlugin(CategoryPlugin):
         self._left_fs = LocalFS()
         self._right_fs = LocalFS()
         self._show_hidden = True
+        self._viewfile = None
+        self._filename = None
 
     def get_ui(self):
         panel = UI.PluginPanel(UI.Label(text=''), title='File Manager', icon='/dl/filemanager/icon.png')
-        mainTable = UI.LayoutTable(
-                        UI.LayoutTableRow(
-                            UI.LayoutTableCell(self.build_panel(self._left_fs, 'left')),
-                            UI.LayoutTableCell(self.build_panel(self._right_fs, 'right'))
+        if self._viewfile is not None:
+            data = self._viewfile.get_content(self._filename)
+            if data is None:
+                panel.appendChild(UI.ErrorBox(title='Error open file "'+self._filename+'"', text='Sorry...'))
+            else:
+                #try:
+                #    lexer = get_lexer_for_filename(self._filename)
+                #except:
+                #    lexer = TextLexer()
+                #formatter = HtmlFormatter(linenos=True, cssclass="source")
+                #print formatter.get_style_defs(arg='')
+                panel.appendChild(
+                        UI.VContainer(
+                            UI.LinkLabel(text="Back to File Manager", id="close_fileview"),
+                            UI.TextInputArea(
+                                        #text=highlight(data, lexer, formatter),
+                                        text=data.replace("\n", "[br]"),
+                                        width="600",
+                                        height="600",
+                                        name="code"
+                                    )
+                            )
                         )
-                )
-        panel.appendChild(mainTable)
+        else:
+            mainTable = UI.LayoutTable(
+                            UI.LayoutTableRow(
+                                UI.LayoutTableCell(self.build_panel(self._left_fs, 'left'), width="50%"),
+                                UI.LayoutTableCell(self.build_panel(self._right_fs, 'right'), width="50%")
+                            )
+                    )
+            panel.appendChild(mainTable)
         return panel
 
     @event('linklabel/click')
@@ -43,6 +73,18 @@ class FileManagerPlugin(CategoryPlugin):
             self._right_fs.up()
         elif params[0] == "left_up":
             self._left_fs.up()
+        elif params[0] == "left_viewfile":
+            name = vars.getvalue('filename', None)
+            if name is not None:
+                self._viewfile= self._left_fs
+                self._filename = name                
+        elif params[0] == "right_viewfile":
+            name = vars.getvalue('filename', None)
+            if name is not None:
+                self._viewfile= self._right_fs
+                self._filename = name
+        elif params[0] == "close_fileview":
+            self._viewfile = None
         
 
     def build_panel(self, fs, id):
@@ -54,20 +96,21 @@ class FileManagerPlugin(CategoryPlugin):
         freeSpace = UI.Label(text="Free "+pretty_size_view(fs.free_space())+" of "+pretty_size_view(fs.total_space()) )
         table = UI.DataTable(
                     UI.DataTableRow(
-                            UI.Label(text="A"),
+                            UI.Label(text=" "),
                             UI.Label(text="Name", bold=True),
                             UI.Label(text="Size", bold=True),
                             UI.Label(text="Perms", bold=True),
                             UI.Label(text="Owner/Group", bold=True),
                             UI.Label(text="Actions", bold=True),
                             header=1
-                        )
+                        ),
+                    width="100%"
                 )
         folders = fs.get_folders()
         for folder in sorted(folders.keys()):
             table.appendChild(
                     UI.DataTableRow(
-                            UI.CheckBox(name=id+'+file[]'),
+                            UI.CheckBox(name=id+'+file[]') if folders[folder]['name'] != '..' else UI.DataTableCell(),
                             UI.DataTableCell(UI.Image(file="/dl/filemanager/"+ ("folder.png"  if folders[folder]['name'] != '..' else 'up.png')),
                                              UI.LinkLabel(text='['+folders[folder]['name']+']' if folders[folder]['name'] != '..' else '[up]',
                                                           id=(id+"_chdir/?folder="+folder) if folders[folder]['name'] != '..' else id+'_up')
@@ -83,7 +126,7 @@ class FileManagerPlugin(CategoryPlugin):
             table.appendChild(
                     UI.DataTableRow(
                             UI.CheckBox(name=id),
-                            UI.DataTableCell(UI.LinkLabel(text='['+files[file]['name']+']', id=id+"_showfile/"+files[file]['name']+"?abc=1")
+                            UI.DataTableCell(UI.LinkLabel(text='['+files[file]['name']+']', id=id+"_viewfile/?filename="+files[file]['name'])
                                         ),
                             UI.Label(text=files[file]['size']),
                             UI.Label(text=files[file]['perms']),
@@ -91,7 +134,7 @@ class FileManagerPlugin(CategoryPlugin):
                             UI.Label(text='info')
                         )
                 )
-        return UI.VContainer(freeSpace, pathSelect, table)
+        return UI.VContainer(freeSpace, pathSelect, table, width="100%")
 
 
 class FileManagerContent(ModuleContent):
