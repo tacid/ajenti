@@ -3,7 +3,7 @@
          xmlns:py="http://genshi.edgewall.org/"
          py:strip="" >
 
-<py:match path="CodeContent">
+<py:match path="widget">
     <div height="${select('@height')}" class="ui-el-widget">
         ${select('node()')}
     </div>
