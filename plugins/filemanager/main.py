@@ -140,3 +140,5 @@ class FileManagerPlugin(CategoryPlugin):
 class FileManagerContent(ModuleContent):
     module = 'filemanager'
     path = __file__
+    widget_files = ['widgets.xml']
+    css_files = ['ui.css']

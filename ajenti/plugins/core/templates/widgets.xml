@@ -174,7 +174,7 @@
     </table>
 </py:match>
 <py:match path="hnode">
-    <td style="padding-right: 5px;">${select('node()')}</td>
+    <td>${select('node()')}</td>
 </py:match>
 
 

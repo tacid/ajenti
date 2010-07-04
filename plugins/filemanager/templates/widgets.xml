@@ -1,0 +1,25 @@
+<widgets xmlns="http://www.w3.org/1999/xhtml"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:py="http://genshi.edgewall.org/"
+         py:strip="" >
+
+
+<py:match path="breadcrumb">
+    <a href="#" onclick="javascript:return ajax('/handle/breadcrumb/click/${select('@id')}');">
+        <div class="breadcrumb">
+            ${select('@text')}
+        </div>
+    </a>
+</py:match>
+
+<py:match path="breadcrumbleft">
+    <div class="breadcrumbleft" />
+</py:match>
+
+<py:match path="breadcrumbright">
+    <div class="breadcrumbright" />
+</py:match>
+
+
+</widgets>
+

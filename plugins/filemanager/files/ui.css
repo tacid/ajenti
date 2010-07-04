@@ -1,0 +1,21 @@
+.breadcrumb {
+    background: url('/dl/filemanager/ui/bcrumb.png') 0px 0px;
+    height: 23px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 3px;
+    line-height: 23px;
+}
+
+.breadcrumbright {
+    background: url('/dl/filemanager/ui/bcrumbright.png') 0px 0px;
+    height: 23px;
+    width: 7px;
+}
+
+.breadcrumbleft {
+    background: url('/dl/filemanager/ui/bcrumbleft.png') 0px 0px;
+    height: 23px;
+    width: 7px;
+}
+
