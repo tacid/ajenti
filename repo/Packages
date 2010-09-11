@@ -3,13 +3,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti
 Filename: ./ajenti-plugin-network-0.2.1.deb
-Size: 9756
-MD5sum: 04e000b31dc50c78457f022323137893
-SHA1: c5a4264e36da657ca61dc83a00dad50af2095b97
-SHA256: ade21ef94ae146854daf08e7500fc645b5981fadc78cdfa0adbdfc53cdfae0aa
+Size: 9754
+MD5sum: 195bc1ef45cd1b9c8d16d69b08a32f98
+SHA1: e6c03f1f3334b55c60ac105c4b8d573fdba9953c
+SHA256: 61dd27479a30a9ad4edc0062be49f10ca5cec50d71327e4fdc9632917ebd322e
 Description: Server administration web-interface
  Network management plugin
 
@@ -18,13 +17,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti
 Filename: ./ajenti-plugin-loadavg-0.2.1.deb
-Size: 3480
-MD5sum: 72d62db9eb150a3708c8dd109b97d37a
-SHA1: 57197006e72e6071e112737667266591ed471dfe
-SHA256: 22fec5ab80357b77b8a6374e6ae37439e9fa1ce9f5e3872dbc0bb0c8395e7e4c
+Size: 3470
+MD5sum: 6fb550519dcb14846d936836be694834
+SHA1: d81a1d3c95aa4c473522159b287bf2a97dd15825
+SHA256: 09262fed5ede3f28acade66abd89a2f6fa4eb153e3fc5b9ff61b91ab3d3ce9c5
 Description: Server administration web-interface
  System stats dashboard widget
 
@@ -33,13 +31,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: samba, ajenti
 Filename: ./ajenti-plugin-samba-0.2.1.deb
-Size: 6974
-MD5sum: eba383a03f14933aa323866dbb320f8a
-SHA1: 668f192ab637787b78e2bd480d5434b62e7b6846
-SHA256: 5139da0b1914d410d22d18a9eea28e2a2e9178a680e450e167beff22eb43cff7
+Size: 6970
+MD5sum: dd94723d5f4d2f5f3dd06e30cf18339a
+SHA1: 3b4151876a3b6ca61d452c8e7e287fb28f7b4863
+SHA256: aa3bd8380fa1d75b0dedb304658e70c7d381beb91de1cfe876c12775c9afe827
 Description: Server administration web-interface
  Samba file server management plugin
 
@@ -51,10 +48,10 @@ Version: 0.2.1
 Provides: ajenti-plugin-packages-backend
 Depends: apt, dpkg, ajenti
 Filename: ./ajenti-plugin-packages-apt-0.2.1.deb
-Size: 1798
-MD5sum: b56adedbf1fb8579e7b13d6abc913ddd
-SHA1: 35e89568ba418d90d23fba4c41bbb55b5627648f
-SHA256: 852b99122f29a5b744591faea12896e92a2a6ee97ff3f77c79b33bd1a847a0a9
+Size: 1796
+MD5sum: fcfb9f33294b3419903544ae5007d705
+SHA1: f9eb8c32f3743572653e4988f0819da74a9f6c6c
+SHA256: 62fc7c7d096176f0fafd91a9680df6d3d162dbc70287b726d242e9a4b0a99b2c
 Description: Server administration web-interface
  APT backend for package management plugin
 
@@ -63,13 +60,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti
 Filename: ./ajenti-plugin-power-0.2.1.deb
-Size: 13128
-MD5sum: 50a57489a6655b09ee04c74724277c82
-SHA1: 9211d282fa8250c7712a55dbd5f6f020a3a57c80
-SHA256: 315b22ba0330fe6331d5d24f9cef064300c4d2fb93fdb054e17a67b4597089f1
+Size: 13122
+MD5sum: ba18aa91219d85e39954bc0123949ec1
+SHA1: 6b90c82bf3d51777ce19e3db980d2bbfe8ae208a
+SHA256: 4615a134c55a4cb6980145d2c63688b937db2a68374db38d64b028372aec29f8
 Description: Server administration web-interface
  Power management plugin
 
@@ -78,13 +74,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: python2.6, python-genshi, python-openssl
 Filename: ./ajenti-0.2.1.deb
-Size: 83996
-MD5sum: 6e71b5258a0d886e0e08a69a291349cb
-SHA1: a2909df416d8244378a72b10256530ce995ef5db
-SHA256: d352f09387a781681d19fa86c5a3a69d0102fae038fc4d946212a83e5d956d41
+Size: 83992
+MD5sum: ecc50bc0088d61621264b5751218d1fe
+SHA1: d3cdc04d028d6674d5f5eafaa280e464acf1a700
+SHA256: dcefc6a0fb97e15b3e32871addf9ed4b406f61d42be68fe60d1cb1f5fc099cb5
 Description: Server administration web-interface
  
 
@@ -93,13 +88,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti
 Filename: ./ajenti-plugin-shell-0.2.1.deb
-Size: 5354
-MD5sum: 5b43df570bdbab34defcbb2592d17315
-SHA1: 07556a72ba2efcb33159885fcaa6bb3fd832cfad
-SHA256: a589cc55d465c1c0dc17996926099277e4a1f49dcc417f410ddb54ba0b8e1903
+Size: 5350
+MD5sum: d23bc6eecb576341885cfbc3ea5e73cb
+SHA1: a70dddc48dd86a402da08d6de09c2060c64a0b51
+SHA256: 5eb8641a6ec62536ddc534afc8b1e53ac8a4ac7e8661adef5b34bb281373acda
 Description: Server administration web-interface
  Shell plugin
 
@@ -111,10 +105,10 @@ Version: 0.2.1
 Provides: ajenti-plugin-services-backend
 Depends: ajenti-plugin-services, ajenti
 Filename: ./ajenti-plugin-services-upstart-0.2.1.deb
-Size: 1128
-MD5sum: cd7344314273d3a40b51d8b2f01e9042
-SHA1: 64e05ab7b1785844cc066d8ceb636d2d53daf3fb
-SHA256: db52e886a464eabfc03d4ac315641399d4e51768288279403818ebdbe983283a
+Size: 1126
+MD5sum: 16d2c3a3fb1c77d9d7bf53ea33481b41
+SHA1: 713324b9e8fba945f7960679b7d1fa87a9f49133
+SHA256: 09273904b8c654ed68df33e711a2d8e5a1a9d7a0e1d64392d1b60eed7aaa46c8
 Description: Server administration web-interface
  Upstart backend for services management plugin
 
@@ -123,13 +117,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti-plugin-packages-backend, ajenti
 Filename: ./ajenti-plugin-packages-0.2.1.deb
-Size: 7054
-MD5sum: ff23e7a80097268a4970362a552c3da3
-SHA1: 9c0b6c22cbbf077caf26c0d9df782c524fb6b6fb
-SHA256: 891e9f4f72d3b6a2cab8baaef26a4d743697de98055fd7b3e71e7431d3485613
+Size: 7046
+MD5sum: 09091df36afbe33ff1bc7d5cb90b8a74
+SHA1: 58a82f19e57c7fd2457c9ce4819210c59a27a7c1
+SHA256: 32ab16cd4f5eb52d7dc61268a3ae85d7c8cf099ebe67fa4dbb84d166ffc96121
 Description: Server administration web-interface
  Package management plugin
 
@@ -138,13 +131,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti
 Filename: ./ajenti-plugin-cron-0.2.1.deb
-Size: 9160
-MD5sum: 1b7b881829b013e33e6bcc5d7bfeb731
-SHA1: fe568f92b40f64161b09374c1c387a252b7fea58
-SHA256: 93deb373999bc5f73a12ef20beceda43e1fcb55b76c933c35b399c98e70f50dc
+Size: 9154
+MD5sum: 360844746ade9c7fb76192be554e7957
+SHA1: bdd04e7dc782b3ec2fd4feb73c08b8c3759a6426
+SHA256: 82effc8af176ff335f156a90684316bd600e18a9c3e5fc86853e2afceb63f516
 Description: Server administration web-interface
  Crontab management plugin
 
@@ -153,13 +145,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti
 Filename: ./ajenti-plugin-filesystems-0.2.1.deb
-Size: 5588
-MD5sum: 9a12b340e7498082c1bf32218021694c
-SHA1: 09aab3fd1abbdf05e35b970a8eed6b21821a115c
-SHA256: d3d9139ad0eecdd79272d607d7b16cf6890e9e86b5ebb9197a6f1a50ee1bed2a
+Size: 5582
+MD5sum: 0c519aa31d8486135f85edf2466b3e69
+SHA1: 238771fde48b4687d887064f8281c9c6a457b855
+SHA256: 2e328eede5f62dd3166d12d78e17c1a1b3d1a42b48fc7cc1f0503be3bd81024e
 Description: Server administration web-interface
  Filesystem management plugin
 
@@ -168,13 +159,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti
 Filename: ./ajenti-plugin-logs-0.2.1.deb
-Size: 7068
-MD5sum: 5b2c32e822a1a8e93981f255377eae0e
-SHA1: da9463b812b2fb705e8af8985bca8118e02b3339
-SHA256: 7cf30525f5bb36792478af32259ec87edd72a7f4235bccc091864cf82e4e9d38
+Size: 7060
+MD5sum: c71c6e302b62c826d97725416a10e1db
+SHA1: ba9452b419fc5f95b6633edd9fd2123daff42259
+SHA256: 5981d08d62f479789f2ada1b1bd3e4bd942290892857acafc3acd973a7dc70fc
 Description: Server administration web-interface
  Log viewer plugin
 
@@ -183,13 +173,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: squid, ajenti
 Filename: ./ajenti-plugin-squid-0.2.1.deb
-Size: 11440
-MD5sum: 4c001be813c9f29b1af04950beea339c
-SHA1: ea0beb8b410ecee55e5be6cd12f2d1917590557f
-SHA256: cad0365a70aa5bb4f6348b15175db2d3eab9ca2392e58d7c308d8e2609d4dec6
+Size: 11436
+MD5sum: f73d209b2e8b5eac6f4edf55067443b4
+SHA1: b063a88e9c365c2d3ce9b7e99c72ebc7b34c6319
+SHA256: 119e0c68cbfb94bb133f9647862e1a80ea7851aa4a7ab8598b7694933385af16
 Description: Server administration web-interface
  Squid proxy server management plugin
 
@@ -198,13 +187,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: apache2, ajenti
 Filename: ./ajenti-plugin-apache-0.2.1.deb
-Size: 4184
-MD5sum: 2fe6cf1e8adeedc8162d6efd8a1a9005
-SHA1: 01d62b13767632b07c29bf4b937bdacf4931b18e
-SHA256: 73c9ae87cc208ff7167b573ffc34b2545382eb2ee9654e019e7b40d88d72316f
+Size: 4176
+MD5sum: 9f95371fb79ef1df10c3aa41a6042495
+SHA1: 7f216b04e2943fb252cf2b89d69b39c69be6065d
+SHA256: 682e71efa9edf4130600babb5656d33f30af6182ebad276d2f10fd6c93be85eb
 Description: Server administration web-interface
  Apache web server management plugin
 
@@ -213,13 +201,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: mcrypt, ajenti
 Filename: ./ajenti-plugin-users-0.2.1.deb
-Size: 7308
-MD5sum: 47935ec6365232774ca32634f96183d5
-SHA1: f88c76b23c8edf377f850bfc80d71a285f779a4d
-SHA256: 0e51d19b676ae52ab65c6d934152f5458f7ace7ae7a66ad4b6b5043cd9ab5000
+Size: 7300
+MD5sum: 71449ab5208915eed29857b16d978b46
+SHA1: 06eb34f402bdec72c252d27c6f6ff516ae5f6d64
+SHA256: ab59d4195a92905e18e57622f202ce51e90689ce82e4a8f5e4d1c7188f72d63f
 Description: Server administration web-interface
  User account management plugin
 
@@ -231,10 +218,10 @@ Version: 0.2.1
 Provides: ajenti-plugin-sql-backend
 Depends: python-psycopg2, ajenti
 Filename: ./ajenti-plugin-sql-pgsql-0.2.1.deb
-Size: 1200
-MD5sum: d48260b8c8e7fb0026e50313ac397bfe
-SHA1: 5971d0a619b855fc331ea12d4deec259aa25d277
-SHA256: 59954bdfdc9bb2bf19518ff6253ee7963f52f48f03d1fef01b193f21651d130e
+Size: 1194
+MD5sum: 6eb0d4c1d6c96b1fdbe3e96cfd75d435
+SHA1: ef49a20c393b0954faa20ffc28c36b582d526a87
+SHA256: 4447490d00afd3467c9a7068b61db4572ba5d3b1d224fbad51caf5d275b9752f
 Description: Server administration web-interface
  PgSQL backend for SQL plugin
 
@@ -243,13 +230,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti-plugin-services-backend, ajenti
 Filename: ./ajenti-plugin-services-0.2.1.deb
-Size: 7154
-MD5sum: 1ad28e103538d9e6e884df7bbf0bcb87
-SHA1: 14ed28c83b8b5ffba0ecfcbc2ed6babfa3415df2
-SHA256: 752340b833ac200d622db454f667a52c119e8b29e2f7333ccf9bbdf0a5c6d025
+Size: 7146
+MD5sum: fbe313052e49ff297e83c99e5acca454
+SHA1: 2678030cbfd3d30643faeedf22610b9a4cc999b7
+SHA256: d4a91356e057f2418b69ec48d4c234a2582c1b65a9f7619a896fe9d70ad00754
 Description: Server administration web-interface
  Services management plugin
 
@@ -258,13 +244,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: ajenti-plugin-sql-backend, ajenti
 Filename: ./ajenti-plugin-sql-0.2.1.deb
-Size: 4726
-MD5sum: 06542f236b8504b8eddcebc10de09bd7
-SHA1: 5c7f4b4b75a47402cddb6951570489a48da7ddfa
-SHA256: 0fcab8c9cc028053d1fbcb55ff63e515c2426f1d581ce4752aa55dd7db0674fa
+Size: 4720
+MD5sum: 8d699aaba1a5ae51a11bc6b870c21cbf
+SHA1: 596e67e1e05a9760ba1c4de19eae296b7df06fe5
+SHA256: b5b6d584b302f6839b18a7638206766c01aad7a84fe2320d02c60e08eb846f86
 Description: Server administration web-interface
  SQL server management plugin
 
@@ -273,13 +258,12 @@ Priority: optional
 Section: admin
 Architecture: i386
 Version: 0.2.1
-Provides: 
 Depends: sarg, ajenti-plugin-squid, ajenti
 Filename: ./ajenti-plugin-squid-sarg-0.2.1.deb
-Size: 1288
-MD5sum: 30f01376f55230a0eef6c1d0ae8f72e0
-SHA1: 1e52ac8cc7ab7fbae7f9874523c2ed2756458570
-SHA256: 97139f7643a6acd840b5298b693f93179d5c412898a42f1596988b63bf8e29ec
+Size: 1278
+MD5sum: 89225e4c4648207d406adcc5ceabc2da
+SHA1: cebfeef192fdbb8846397f46dad2e5a231c5d772
+SHA256: 178a826211ff037e3b6654799229066299ed8726291339a4b2afa784cb055403
 Description: Server administration web-interface
  Squid Report Generator plugin
 
@@ -292,9 +276,9 @@ Provides: ajenti-plugin-sql-backend
 Depends: python-mysqldb, ajenti
 Filename: ./ajenti-plugin-sql-mysql-0.2.1.deb
 Size: 1116
-MD5sum: 36294ef10cf2fe6e61cf626705070df0
-SHA1: 5169606fc7d4fd084404623077bfdbdbe37686f6
-SHA256: ec6e438dade53b3250afe50774d815260682cd331eed943642919486422bcbe1
+MD5sum: ba7824865b6de729da6aa179d0833475
+SHA1: 4b219e6634a06f6afe594508ec84728ee5e7634c
+SHA256: 64a3dd32a059e12050c3a7b486e2ae8d0caabdd4d5b55f340d1580f89d019d0d
 Description: Server administration web-interface
  MySQL backend for SQL plugin
 
