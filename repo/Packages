@@ -90,12 +90,12 @@ Section: admin
 Architecture: all
 Version: 0.3.5
 Provides: ajenti-plugin-packages-backend
-Depends: apt, dpkg, ajenti-plugin-pkgman, ajenti
+Depends: apt, dpkg, ajenti-plugin-packages, ajenti
 Filename: ./ajenti-plugin-packages-apt-0.3.5.deb
-Size: 1798
-MD5sum: 7a77525d794af624665820e73a5b8392
-SHA1: 8ed5a86316dd243b18eb822669c7b3a8040b51c2
-SHA256: e108ba66aa328456ef09cc6e75854d65ead328955dc0d21624e290f1ec090676
+Size: 1796
+MD5sum: f856847e063ed3ec944bdd9074f96dbe
+SHA1: c1cdca3d5fcc50e80369e8d9000565736aea5d44
+SHA256: 14ba3d8b5cb925265ca2725eef27b47bf10dd1f8538e2d5deda32d87cb26bb38
 Description: Server administration web-interface
  APT backend for package management plugin
 
@@ -233,10 +233,10 @@ Architecture: all
 Version: 0.3.5
 Depends: ajenti-plugin-packages-backend, ajenti
 Filename: ./ajenti-plugin-packages-0.3.5.deb
-Size: 7056
-MD5sum: 642b7872d04d4aaf1e40d70d3f43c16c
-SHA1: 4d652b79db5c83692c9ffbeb18bb0f5f871ef537
-SHA256: 3a79d7301894130cec5b834718cb5f4ae8fc0d6223ececc17c696689f918aeb7
+Size: 7052
+MD5sum: b6090a70de5415b2f4dcece9db471a7e
+SHA1: 9765204d2e8fd4ff33053a4ef2b529df96dadc3d
+SHA256: eec9881c4721226e522b00f0307054558db8295e10fd5060e636a15b4577eaaa
 Description: Server administration web-interface
  Package management plugin
 
