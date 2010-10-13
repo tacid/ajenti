@@ -370,10 +370,10 @@ Architecture: all
 Version: 0.3.90
 Depends: squid, ajenti-plugin-services, ajenti
 Filename: ./ajenti-plugin-squid-0.3.90.deb
-Size: 11672
-MD5sum: df9ea739755afd5a4aeb0852ea10b694
-SHA1: 6ce5dfc85601ad9b8aaf83c2de66fb606d165359
-SHA256: 1722112abab00fac2655b6963a8d1e55bc859019b7a37ae34da790f7864d2d89
+Size: 11710
+MD5sum: 918cc0aff510fa85db7c3fdae688b9a4
+SHA1: d31fd8c9ef381db9375cb438e06d39c724325ca4
+SHA256: 192ef8f1469b429eae36bc73613fce91393577aded91c56037c72a0f09b60c89
 Description: Server administration web-interface
  Squid proxy server management plugin
 
