@@ -125,21 +125,6 @@ SHA256: d03cb5e462ab407bb85436d6f46ddc2c43a0d7d1d8c8812424855259b0947303
 Description: Server administration web-interface
  SQL server management plugin
 
-Package: ajenti-plugin-services-bsd
-Priority: optional
-Section: admin
-Architecture: all
-Version: 0.3.90
-Provides: ajenti-plugin-services-backend
-Depends: ajenti
-Filename: ./ajenti-plugin-services-bsd-0.3.90.deb
-Size: 1222
-MD5sum: 3863825e6f8c067374ff55676bc0fc78
-SHA1: d22eb5d16b7964369726bcfe4352bddd92551146
-SHA256: 2fb933bdac861d36b36d715fa7c63c0d76ee160853c624e04a4bffad6a7655e3
-Description: Server administration web-interface
- BSD backend for services management plugin
-
 Package: ajenti-plugin-nginx
 Priority: optional
 Section: admin
@@ -210,36 +195,6 @@ SHA1: a4a694195af647beb83e7c3e23df79005eab51d3
 SHA256: 3f325433249d020b48ece5ede9c3d6cc469e762675effd2e617e70927563491a
 Description: Server administration web-interface
  Samba file server management plugin
-
-Package: ajenti-plugin-packages-ports
-Priority: optional
-Section: admin
-Architecture: all
-Version: 0.3.90
-Provides: ajenti-plugin-packages-backend
-Depends: ajenti-plugin-packages, ajenti
-Filename: ./ajenti-plugin-packages-ports-0.3.90.deb
-Size: 2106
-MD5sum: f06cd8c2492fcaf7e14166c64c65a784
-SHA1: e2f2afa3bba2976672bd5b891bd200ec9f3c794f
-SHA256: 81a9f6d29241e3b46013bf8bc672e0a102058169163a707bbdc321669e3fcca7
-Description: Server administration web-interface
- FreeBSD ports backend for package management plugin
-
-Package: ajenti-plugin-loadavg-bsd
-Priority: optional
-Section: admin
-Architecture: all
-Version: 0.3.90
-Provides: ajenti-plugin-loadavg-backend
-Depends: freecolor, ajenti
-Filename: ./ajenti-plugin-loadavg-bsd-0.3.90.deb
-Size: 1186
-MD5sum: 35160ea7139f2c1d72b2fd183b501e44
-SHA1: dc03662c4665b44f9dfcc9f7ef78ce0b93e69818
-SHA256: 176d5ddb0b402afc6ee882d11210305e6fd8894d26c235ba572802be8fe34d93
-Description: Server administration web-interface
- BSD backend for system stats dashboard widget
 
 Package: ajenti-plugin-cron
 Priority: optional
