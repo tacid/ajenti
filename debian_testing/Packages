@@ -66,10 +66,10 @@ Architecture: all
 Version: 0.3.90
 Depends: python, python-lxml, python-openssl
 Filename: ./ajenti-0.3.90.deb
-Size: 110068
-MD5sum: c28a60cce8e1ba062040b6f93d37ff97
-SHA1: e7ba88d1834bf6731e8eee191f32f880ebc95c5f
-SHA256: 37830766fdb715d49def9ab5da0148b31401199b3e9d7fea0b0d8b3a190b7c7d
+Size: 110076
+MD5sum: c764eec0ebf14b59f2ecbc014fef05b5
+SHA1: 18ff6d2bf9f48786f29dcdcd3a7d1f8a367a5056
+SHA256: f3ee650847786db593e8f6242050adb2fb83ac4a5cf1643f96f3b0525245945e
 Description: Server administration web-interface
  
 
