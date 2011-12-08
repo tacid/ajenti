@@ -13,7 +13,7 @@ class PortsPackageManager(Plugin):
     _pending = {}
 
     def refresh(self, st):
-        p = utils.shell('pkg_version|grep \'<\'').split('\n')
+        p = utils.shell('pkg_version -l"<"').split('\n')
         a = self._get_all()
         st.upgradeable = {}
 
